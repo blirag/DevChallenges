@@ -3,19 +3,7 @@
 <h1 align="center">DevChallenges</h1>
 
 <div align="center">
-   Solução para o desafio do  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
-</div>
-
-<div align="center">
-  <h3>
-    <a href="./404pagechallenge">
-      Solução
-    </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY">
-      Desafio
-    </a>
-  </h3>
+   Solução para os desafios do  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -23,8 +11,7 @@
 ## Índice
 
 - [Visão Geral](#visão-geral)
-  - [Feito com](#feito-com)
-- [Desafio - 404 Error](#desafio-404-error)
+- [Soluções e Desafios](#soluções-e-desafios)
 - [Contato](#contato)
 <!-- - [Créditos](#acknowledgements) -->
 
@@ -32,24 +19,31 @@
 
 ## Visão Geral
 
-![screenshot](./404pagechallenge/img/desktopv.png)
+![screenshot](./grid.png)
 
+## Soluções e Desafios
 
-### Feito com
-
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
-- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-<!-- - [Tailwind](https://tailwindcss.com/) -->
-
-## Desafio 404 Error
-
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+### <a href="./404pagechallenge"> 404 Error </a>
 
 Esta página foi criada como uma submissão a um desafio [DevChallenges](https://devchallenges.io/challenges). O [desafio](https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY) era construir uma página de erro para o usuário.
 
-![screenshot](./404pagechallenge/img/mobilev.png)
+![screenshot](./404pagechallenge/img/desktopv.png)
+
+### Feito com
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+
+### <a href="./interiorconsultant"> Interior consultant </a>
+
+Esta página foi criada como uma submissão a um desafio [DevChallenges](https://devchallenges.io/challenges). O [desafio](https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb) era construir uma página de uma empresa de design de interiores.
+
+![screenshot](./interiorconsultant/img/desktopv.png)
+
+### Feito com
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JAVASCRIPT](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
 
 
 <!-- ## Créditos -->
