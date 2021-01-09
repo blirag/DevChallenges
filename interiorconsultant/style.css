@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #181719;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+header .name {
+    border: 1px solid #fff;
+    margin: 30px 60px;
+}
+
+header .name p {
+    font-family: Crimson Pro;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+header .navbar .icon {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+header .navbar .menu-list .cancel-btn{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+header .navbar ul {
+    display: flex;
+}
+
+header .navbar ul li {
+    padding: 30px 60px;
+}
+
+header .navbar ul li a {
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+header .navbar ul li .active {font-weight: bold;}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 60px 30px 60px;
+}
+
+main .infos h1{
+    font-family: Lora;
+    font-size: 48px;
+    font-weight: normal;
+    line-height: 61px;
+    margin-bottom: 50px;
+}
+
+main .infos p {
+    width: 410px;
+    height: 145px;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 50px;
+}
+
+main .infos a {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+main .infos a i {
+    padding-left: 10px;
+}
+
+main .photo img {
+    width: 821.11px;
+    height: 586.53px;
+}
+
+main .photo .card {
+    position: relative;
+    width: 410px;
+    height: 189px;
+    background-color: #181719;
+    margin: -102px 0 0 350px;
+}
+
+main .photo .card .profile {
+    display: flex;
+    align-items: center;
+}
+
+main .photo .card .profile span {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+main .photo .card .profile p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 15px;
+    color: #828282;
+}
+
+main .photo .card .profile img {
+    width: 85px;
+    height: 72px;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+main .photo .card h3 {
+    font-family: Lora;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 31px;
+    margin: 10px 20px
+}
+
+hr {display: none;}
+
+footer {margin-bottom: 20px;}
+
+footer, footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A9A9A9;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    body.disabled {overflow: hidden;}
+
+    header .name p {font-size: 14px;} 
+
+    header .navbar .icon {display: block;}
+
+    header .navbar .icon.hide {display: none;}
+
+    header .navbar .menu-btn {
+        display: block;
+        margin-right: 40px;
+    }
+
+    header .navbar .menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        transition: all .3s ease;
+        background-color: #181719;
+    }
+
+    header .navbar.show .menu-list {
+        left: 0%; 
+        z-index: 1;
+    }
+
+    header .navbar .menu-list li{margin-top: 30px}
+      
+    header .navbar .menu-list li a{
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    header .navbar.show .menu-list li a{
+        margin-left: 0px;
+    }
+
+   main {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+   main .infos h1 {
+       font-size: 36px;
+       line-height: 46px;
+   }
+
+   main .infos p {
+       width: 250px;
+       height: 85px;
+       font-size: 16px;
+       line-height: 17px;
+   }
+
+   main .infos a {
+       font-size: 14px;
+       line-height: 17px;
+        margin-bottom: 30px;
+   }
+
+   main .photo .image img {
+       display: none;
+   }
+
+   main .photo .image {
+       background: url(./img/photo1.png);
+       background-size: contain;
+       width: auto;
+       height: 279.34px;
+   }
+
+   main .photo .card {
+       width: 250px;
+       height: 138px;
+       margin: -50px 0 0 50px;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   }
+
+   main .photo .card .profile span {
+       font-size: 14px;
+       line-height: 15px;
+   }
+
+   main .photo .card .profile p {
+       font-size: 12px;
+       line-height: 12px;
+   }
+
+   main .photo .card .profile img {
+       width: 62.2px;
+       height: 52.68px;
+   }
+
+    main .photo .card h3 {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    #hr {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+    }
+
+    hr {
+        display: block;
+        width: 261px;
+        border: 1px solid #A9A9A9;
+    }
+}
